@@ -4,6 +4,9 @@ ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.11.0'
+
 gem 'bcrypt-ruby'
 
 # Use sqlite3 as the database for Active Record
@@ -18,6 +21,7 @@ group :test do
   gem 'nokogiri', '1.6.1'
 
   gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 # Use SCSS for stylesheets
@@ -43,7 +47,7 @@ end
 gem 'rb-readline'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+gem 'spring','1.1.2',        group: :development
 
 group :production do
   gem 'pg'
